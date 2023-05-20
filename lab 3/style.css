@@ -1,0 +1,54 @@
+header {
+	height: 400px;
+	background-image: url(images/coffee-biscuits.jpg);
+	background-size: cover;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	padding-top: 130px;
+  }
+  
+  h1 {
+	color: white;
+	text-align: center;
+	font-size: 3rem;
+  }
+  p{
+	text-align: center;
+	color:black;
+  }
+  footer {
+	background-color: gray;
+	color: white;
+	text-align: center;
+	padding-top: 35px;
+	padding-bottom: 35px;
+  }
+  h2 {
+	text-align: center;
+	padding-top: 40px;
+	
+
+  }
+  img{
+    border-radius: 50%; 
+	width: 220px; 
+	height: 220px;
+}
+.photo{
+    
+    margin: 1rem;
+    padding:2rem 2rem;
+    text-align: center;
+}
+
+.php{
+    display:inline-block;
+   
+    padding: 1rem 1rem;
+    vertical-align: middle;
+}
+.back {
+	background-color: aliceblue;
+	margin-top: 50px;
+}
