@@ -367,7 +367,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, .7);
 }
 
 .popup-content {
@@ -375,7 +375,8 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fefefe;
   margin: 10% auto;
   padding: 20px;
-  width: 70%;
+  height: 45%;
+  width: 25%;
   max-width: 500px;
 }
 
@@ -407,14 +408,16 @@ input {
 }
 
 button[type="submit"] {
-  margin-top: 10px;
+  margin-top: 50px;
   padding: 8px 12px;
-  background-color: #4CAF50;
+  background-color: #f38181;
+  font-family: Franklin Gothic Medium;
+  font-size: 30px;
   color: #fff;
   border: none;
   cursor: pointer;
 }
 
 button[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: #f38181;
 }

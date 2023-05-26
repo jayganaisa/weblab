@@ -82,12 +82,13 @@
 
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-4">
           <div class="col mb-4">
-        <div class="card" style="width: 18rem;"  id="openPopupButton">
+        <div class="card" style="width: 18rem;"  >
           <img class="card-img-top" src="ista.jpg" alt="Istanbul photo">
           <div class="card-body">
             <h5 class="card-title">Istanbul</h5>
             <p class="card-text">Turkey</p>
             <p class="card-text">69500 Kzt</p>
+            <button class="openPopupButton">Buy</button>
           </div>
         </div>
           </div>
@@ -98,6 +99,7 @@
                 <h5 class="card-title">Moscow</h5>
                 <p class="card-text">Russia</p>
                 <p class="card-text">97000 Kzt</p>
+                <button class="openPopupButton">Buy</button>
               </div>
             </div>
               </div>
@@ -108,6 +110,7 @@
                     <h5 class="card-title">Dubai</h5>
                     <p class="card-text">UAE</p>
                     <p class="card-text">125000 Kzt</p>
+                    <button class="openPopupButton">Buy</button>
                   </div>
                 </div>
                   </div>
@@ -118,6 +121,7 @@
                         <h5 class="card-title">Paris</h5>
                         <p class="card-text">France</p>
                         <p class="card-text">140000 Kzt</p>
+                        <button class="openPopupButton">Buy</button>
                       </div>
                     </div>
                       </div>
@@ -136,7 +140,7 @@
 <div id="popup" class="popup">
   <div class="popup-content">
     <span class="close">&times;</span>
-    <h2>Information Form</h2>
+    <h2>Enter Your Personal Data</h2>
     <form id="informationForm">
       <label for="nameInput">Name:</label>
       <input type="text" id="nameInput" required>
@@ -177,37 +181,42 @@ function toggleAudio() {
 //pop up menu script
 
 
-const openPopupButton = document.getElementById('openPopupButton');
+const openPopupButton = document.querySelectorAll('.openPopupButton');
 const popup = document.getElementById('popup');
 const closePopupButton = document.querySelector('.close');
 const informationForm = document.getElementById('informationForm');
 
-openPopupButton.addEventListener('click', openPopup);
-closePopupButton.addEventListener('click', closePopup);
+
+
+
+openPopupButton.forEach(button => {
+  button.addEventListener('click', () => {
+    
+    popup.style.display = 'block';
+  });
+});
+
+closePopupButton.addEventListener('click', Closepop);
 informationForm.addEventListener('submit', submitForm);
 
-function openPopup() {
-  popup.style.display = 'block';
-}
 
-function closePopup() {
+function Closepop() {
   popup.style.display = 'none';
 }
 
 function submitForm(event) {
   event.preventDefault();
   
-  // Get form input values
+ 
   const name = document.getElementById('nameInput').value;
   const email = document.getElementById('emailInput').value;
   const phone = document.getElementById('phoneInput').value;
   
-  // Perform form submission logic
-  // Replace the following alert with your actual form submission logic
+
   alert(`Form submitted!\nName: ${name}\nEmail: ${email}\nPhone: ${phone}`);
   
-  // Close the popup window
-  closePopup();
+  
+  Closepop();
 }
 
 </script>
