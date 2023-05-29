@@ -45,21 +45,25 @@
     <div class="slider">
         <div class="container">
             <div class="slider__inner">
-                <div class="slider__item active">
-                    <span class="slider__num">01</span>
-                    All
+                <div class="loading-shell">
+                  <div class="loading-animation"></div>
+                  <span class="loading-text">01 All</span>
+                    
                 </div>
-                <div class="slider__item">
-                    <span class="slider__num">02</span>
-                    Econom
+                <div class="loading-shell">
+                  <div class="loading-animation"></div>
+                    <span class="loading-text">02 Econom</span>
+                    
                 </div>
-                <div class="slider__item">
-                    <span class="slider__num">03</span>
-                    Busines
+                <div class="loading-shell">
+                  <div class="loading-animation"></div>
+                    <span class="loading-text">03 Bussines</span>
+                    
                 </div>
-                <div class="slider__item">
-                    <span class="slider__num">04</span>
-                    Lux
+                <div class="loading-shell">
+                  <div class="loading-animation"></div>
+                    <span class="loading-text">04 Lux</span>
+                    
                 </div>
             </div>
         </div>
@@ -266,6 +270,28 @@ function submitForm(event) {
   
   Closepop();
 }
+
+
+//Loading Cards animation section
+
+
+window.addEventListener('DOMContentLoaded', function() {
+
+  var animations = document.querySelectorAll('.loading-animation');
+  var currentAnimationIndex = 3;
+
+   function playNextAnimation() 
+  {
+    animations[currentAnimationIndex].style.animationName = 'none';
+    currentAnimationIndex = (currentAnimationIndex + 1) % animations.length;
+    animations[currentAnimationIndex].style.animationName = 'loading';
+  }
+
+  playNextAnimation();
+  setInterval(playNextAnimation, 2000);
+
+});
+
 
 </script>
 </body>
