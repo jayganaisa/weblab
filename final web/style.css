@@ -191,9 +191,11 @@ h1, h2, h3, h4, h5, h6 {
 .loading-shell
 {
     width: 250px;
-     font-size: 18px;
+     font-size: 25px;
     color: #fff;
     text-transform: uppercase;
+    animation-duration: 7s;
+     opacity: 0.4;
 }
 
 .loading-animation {
@@ -201,11 +203,22 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px 0;
     position: relative;
 
-    border-top: 3px solid #f38181;
-    animation-duration: 5s;
+    border-top: 3px solid #F23F3F;
+    animation-duration: 20s;
     
 
    
+}
+
+.loading-slides
+{
+  display: none;
+  
+ animation-duration: 5s;
+  
+
+
+
 }
 
 
@@ -228,8 +241,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 @keyframes opacity {
   0% {
-    opacity: 0.2;
+    opacity: 0.4;
   }
+ 
   100% {
     opacity: 1;
   }
