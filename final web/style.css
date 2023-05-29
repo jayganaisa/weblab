@@ -86,6 +86,12 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
+@media (max-width: 600px) {
+    .intro__suptitle {
+      font-size: 100px;
+    }
+  }
+
 
 /* Header */
 .header {
@@ -122,6 +128,12 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 14px;
     text-transform: uppercase;
 }
+
+@media (max-width: 600px) {
+    .nav {
+      font-size: 10px;
+    }
+  }
 
 .nav__link {
     display: inline-block;
@@ -242,6 +254,12 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     z-index: 1;
 }
+
+@media (max-width: 1100px) {
+    .slider {
+      display: none;
+    }
+  }
 
 .slider__inner {
     display: flex;
