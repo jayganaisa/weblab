@@ -605,3 +605,32 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #f38181;
 }
+
+
+
+/*.........................................................*/
+
+  .popupMenu {
+  position: absolute;
+  display: none;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  z-index: 99999;
+}
+
+.popupMenu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.popupMenu ul li {
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.popupMenu ul li:hover {
+  background-color: #ddd;
+}
