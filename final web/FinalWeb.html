@@ -28,13 +28,14 @@
                 <a class="nav__link active" href="#">Home</a>
                 <a class="nav__link" href="directions.html">Directions</a>
                 <a class="nav__link" href="about.html">About</a>
-               <form autocomplete="off" action="/action_page.php">
+               
   <div class="autocomplete" style="width:300px;">
     <input id="myInput" type="text" name="myCountry" placeholder="Country">
-    <input id="autoButton" type="submit">
+    
   </div>
-
-</form>
+  <div> 
+    <input class="openPopupButton" id="autoButton" type="submit">
+  </div>
             </nav>
         </div>
     </div>
@@ -106,7 +107,7 @@
             <h5 class="card-title">Istanbul</h5>
             <p class="card-text">Turkey</p>
             <p class="card-text">69500 Kzt</p>
-            <button class="openPopupButton" onclick="purchaseTicket()">Buy</button>
+            <button class="openPopupButton" >Buy</button>
           </div>
         </div>
           </div>
@@ -310,7 +311,7 @@
                         <h5 class="card-title">Hong Kong</h5>
                         <p class="card-text">Hong Kong</p>
                         <p class="card-text">140000 Kzt</p>
-                        <button class="openPopupButton" onclick="purchaseTicket()">Buy</button>
+                        <button class="openPopupButton">Buy</button>
                       </div>
                     </div>
                       </div>
@@ -420,8 +421,7 @@ function toggleAudio() {
 
 //pop up menu script
 
-function purchaseTicket()
-{
+
   const openPopupButton = document.querySelectorAll('.openPopupButton');
 const popup = document.getElementById('popup');
 const closePopupButton = document.querySelector('.close');
@@ -459,7 +459,7 @@ function submitForm(event) {
 
   Closepop();
 }
-}
+
 
 
 
