@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Aitulines</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -25,8 +26,13 @@
                 <a class="nav__link active" href="#">Home</a>
                 <a class="nav__link" href="directions.html">Directions</a>
                 <a class="nav__link" href="about.html">About</a>
-                <a class="nav__link" href="#">FAQ</a>
-                <a class="nav__link" href="#">Contacts</a>
+               <form autocomplete="off" action="/action_page.php">
+  <div class="autocomplete" style="width:300px;">
+    <input id="myInput" type="text" name="myCountry" placeholder="Country">
+    <input id="autoButton" type="submit">
+  </div>
+  
+</form>
             </nav>
         </div>
     </div>
@@ -92,19 +98,19 @@
 
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-4">
           <div class="col mb-4">
-        <div class="card" style="width: 18rem;"  >
-          <img class="card-img-top" src="ista.jpg" alt="Istanbul photo">
+        <div class="card" style="width: 18rem; height: 365px;"  >
+          <img class="card-img-top" src="ista.jpg" alt="Istanbul photo" >
           <div class="card-body">
             <h5 class="card-title">Istanbul</h5>
             <p class="card-text">Turkey</p>
             <p class="card-text">69500 Kzt</p>
-            <button class="openPopupButton">Buy</button>
+            <button class="openPopupButton" onclick="purchaseTicket()">Buy</button>
           </div>
         </div>
           </div>
           <div class="col mb-4">
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="msc.jpg" alt="Moscow photo">
+            <div class="card" style="width: 18rem; height: 365px;">
+              <img class="card-img-top" src="london.jpg" alt="Moscow photo">
               <div class="card-body">
                 <h5 class="card-title">London</h5>
                 <p class="card-text">UK</p>
@@ -114,7 +120,7 @@
             </div>
               </div>
               <div class="col mb-4">
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 18rem; height: 365px;">
                   <img class="card-img-top" src="dub.jpg" alt="Dubai photo">
                   <div class="card-body">
                     <h5 class="card-title">Dubai</h5>
@@ -125,8 +131,8 @@
                 </div>
                   </div>
                   <div class="col mb-4">
-                    <div class="card" style="width: 18rem;">
-                      <img class="card-img-top" src="prs.jpg" alt="Paris photo">
+                    <div class="card" style="width: 18rem; height: 365px;">
+                      <img class="card-img-top" src="singapoure.jpg" alt="Paris photo">
                       <div class="card-body">
                         <h5 class="card-title">Singapore</h5>
                         <p class="card-text">Singapore</p>
@@ -151,8 +157,8 @@
 
   <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-4">
           <div class="col mb-4">
-        <div class="card" style="width: 18rem;"  >
-          <img class="card-img-top" src="ista.jpg" alt="Istanbul photo">
+        <div class="card" style="width: 18rem; height: 365px;"  >
+          <img class="card-img-top" src="antaluya.jpg" alt="Istanbul photo">
           <div class="card-body">
             <h5 class="card-title">Antalya</h5>
             <p class="card-text">Turkey</p>
@@ -162,7 +168,7 @@
         </div>
           </div>
           <div class="col mb-4">
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem; height: 365px;">
               <img class="card-img-top" src="msc.jpg" alt="Moscow photo">
               <div class="card-body">
                 <h5 class="card-title">Moscow</h5>
@@ -173,8 +179,8 @@
             </div>
               </div>
               <div class="col mb-4">
-                <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="dub.jpg" alt="Dubai photo">
+                <div class="card" style="width: 18rem; height: 365px;">
+                  <img class="card-img-top" src="athens.jpg" alt="Dubai photo">
                   <div class="card-body">
                     <h5 class="card-title">Athens</h5>
                     <p class="card-text">Greece</p>
@@ -184,8 +190,8 @@
                 </div>
                   </div>
                   <div class="col mb-4">
-                    <div class="card" style="width: 18rem;">
-                      <img class="card-img-top" src="prs.jpg" alt="Paris photo">
+                    <div class="card" style="width: 18rem; height: 365px;">
+                      <img class="card-img-top" src="Dehli.jpg" alt="Paris photo">
                       <div class="card-body">
                         <h5 class="card-title">New Dehli</h5>
                         <p class="card-text">India</p>
@@ -210,8 +216,8 @@
 <div class="loading-slides">
   <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-4">
           <div class="col mb-4">
-        <div class="card" style="width: 18rem;"  >
-          <img class="card-img-top" src="ista.jpg" alt="Istanbul photo">
+        <div class="card" style="width: 18rem; height: 365px;"  >
+          <img class="card-img-top" src="barcelona.jpg" alt="Istanbul photo">
           <div class="card-body">
             <h5 class="card-title">Barcelona</h5>
             <p class="card-text">Spain</p>
@@ -221,8 +227,8 @@
         </div>
           </div>
           <div class="col mb-4">
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="msc.jpg" alt="Moscow photo">
+            <div class="card" style="width: 18rem; height: 365px;">
+              <img class="card-img-top" src="london.jpg" alt="Moscow photo">
               <div class="card-body">
                 <h5 class="card-title">London</h5>
                 <p class="card-text">UK</p>
@@ -232,8 +238,8 @@
             </div>
               </div>
               <div class="col mb-4">
-                <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="dub.jpg" alt="Dubai photo">
+                <div class="card" style="width: 18rem; height: 365px;">
+                  <img class="card-img-top" src="Venice.jpg" alt="Dubai photo">
                   <div class="card-body">
                     <h5 class="card-title">Venice</h5>
                     <p class="card-text">Italy</p>
@@ -243,8 +249,8 @@
                 </div>
                   </div>
                   <div class="col mb-4">
-                    <div class="card" style="width: 18rem;">
-                      <img class="card-img-top" src="prs.jpg" alt="Paris photo">
+                    <div class="card" style="width: 18rem; height: 365px;">
+                      <img class="card-img-top" src="tokyo.jpg" alt="Paris photo">
                       <div class="card-body">
                         <h5 class="card-title">Tokyo</h5>
                         <p class="card-text">Japan</p>
@@ -263,8 +269,8 @@
 <div class="loading-slides">
   <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-4">
           <div class="col mb-4">
-        <div class="card" style="width: 18rem;"  >
-          <img class="card-img-top" src="ista.jpg" alt="Istanbul photo">
+        <div class="card" style="width: 18rem; height: 365px;"  >
+          <img class="card-img-top" src="LA.jpg" alt="Istanbul photo">
           <div class="card-body">
             <h5 class="card-title">Los-Angeles</h5>
             <p class="card-text">USA</p>
@@ -274,8 +280,8 @@
         </div>
           </div>
           <div class="col mb-4">
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="msc.jpg" alt="Moscow photo">
+            <div class="card" style="width: 18rem; height: 365px;">
+              <img class="card-img-top" src="Vancouver.jpg" alt="Moscow photo">
               <div class="card-body">
                 <h5 class="card-title">Vancouver</h5>
                 <p class="card-text">Canada</p>
@@ -285,8 +291,8 @@
             </div>
               </div>
               <div class="col mb-4">
-                <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="dub.jpg" alt="Dubai photo">
+                <div class="card" style="width: 18rem; height: 365px;">
+                  <img class="card-img-top" src="sanjose.jpg" alt="Dubai photo">
                   <div class="card-body">
                     <h5 class="card-title">San José</h5>
                     <p class="card-text">Costa Rica</p>
@@ -296,13 +302,13 @@
                 </div>
                   </div>
                   <div class="col mb-4">
-                    <div class="card" style="width: 18rem;">
-                      <img class="card-img-top" src="prs.jpg" alt="Paris photo">
+                    <div class="card" style="width: 18rem; height: 365px;">
+                      <img class="card-img-top" src="hong.jpg" alt="Paris photo">
                       <div class="card-body">
                         <h5 class="card-title">Hong Kong</h5>
                         <p class="card-text">Hong Kong</p>
                         <p class="card-text">140000 Kzt</p>
-                        <button class="openPopupButton">Buy</button>
+                        <button class="openPopupButton" onclick="purchaseTicket()">Buy</button>
                       </div>
                     </div>
                       </div>
@@ -412,8 +418,9 @@ function toggleAudio() {
 
 //pop up menu script
 
-
-const openPopupButton = document.querySelectorAll('.openPopupButton');
+function purchaseTicket()
+{
+  const openPopupButton = document.querySelectorAll('.openPopupButton');
 const popup = document.getElementById('popup');
 const closePopupButton = document.querySelector('.close');
 const informationForm = document.getElementById('informationForm');
@@ -450,6 +457,8 @@ function submitForm(event) {
 
   Closepop();
 }
+}
+
 
 
 //Loading Cards animation section
@@ -501,6 +510,116 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 
+$(".card-img-top").css("height","180px")
+
+
+
+
+
+
+//autocomplete and search bar
+
+var countries = ["Dubai","Vancouver","New-York","Istanbul","Singapoure","London","Cair","Antalya","Male","Athens"];
+
+function autocomplete(inp, arr) {
+  /*the autocomplete function takes two arguments,
+  the text field element and an array of possible autocompleted values:*/
+  var currentFocus;
+  /*execute a function when someone writes in the text field:*/
+  inp.addEventListener("input", function(e) {
+      var a, b, i, val = this.value;
+      /*close any already open lists of autocompleted values*/
+      closeAllLists();
+      if (!val) { return false;}
+      currentFocus = -1;
+      /*create a DIV element that will contain the items (values):*/
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+      /*append the DIV element as a child of the autocomplete container:*/
+      this.parentNode.appendChild(a);
+      /*for each item in the array...*/
+      for (i = 0; i < arr.length; i++) {
+        /*check if the item starts with the same letters as the text field value:*/
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+          /*create a DIV element for each matching element:*/
+          b = document.createElement("DIV");
+          /*make the matching letters bold:*/
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+          /*insert a input field that will hold the current array item's value:*/
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+          /*execute a function when someone clicks on the item value (DIV element):*/
+              b.addEventListener("click", function(e) {
+              /*insert the value for the autocomplete text field:*/
+              inp.value = this.getElementsByTagName("input")[0].value;
+              /*close the list of autocompleted values,
+              (or any other open lists of autocompleted values:*/
+              closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+  });
+  /*execute a function presses a key on the keyboard:*/
+  inp.addEventListener("keydown", function(e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+        /*If the arrow DOWN key is pressed,
+        increase the currentFocus variable:*/
+        currentFocus++;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 38) { //up
+        /*If the arrow UP key is pressed,
+        decrease the currentFocus variable:*/
+        currentFocus--;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        /*If the ENTER key is pressed, prevent the form from being submitted,*/
+        e.preventDefault();
+        if (currentFocus > -1) {
+          /*and simulate a click on the "active" item:*/
+          if (x) x[currentFocus].click();
+        }
+      }
+  });
+  function addActive(x) {
+    /*a function to classify an item as "active":*/
+    if (!x) return false;
+    /*start by removing the "active" class on all items:*/
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    /*add class "autocomplete-active":*/
+    x[currentFocus].classList.add("autocomplete-active");
+  }
+  function removeActive(x) {
+    /*a function to remove the "active" class from all autocomplete items:*/
+    for (var i = 0; i < x.length; i++) {
+      x[i].classList.remove("autocomplete-active");
+    }
+  }
+  function closeAllLists(elmnt) {
+    /*close all autocomplete lists in the document,
+    except the one passed as an argument:*/
+    var x = document.getElementsByClassName("autocomplete-items");
+    for (var i = 0; i < x.length; i++) {
+      if (elmnt != x[i] && elmnt != inp) {
+      x[i].parentNode.removeChild(x[i]);
+    }
+  }
+}
+/*execute a function when someone clicks in the document:*/
+document.addEventListener("click", function (e) {
+    closeAllLists(e.target);
+});
+}
+
+
+autocomplete(document.getElementById("myInput"), countries);
 </script>
 </body>
 </html>
